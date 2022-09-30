@@ -11,9 +11,3 @@ for i in range(1, number+1) :
     lisl.append(result * i)   # добавляем в конец списка элемент (result = result * i)
 
 print(lisl)
-
-
-# a = 5
-# b = 3
-# c = a + b
-# print(c)
