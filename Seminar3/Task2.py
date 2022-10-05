@@ -4,41 +4,17 @@
 # - [2, 3, 4, 5, 6] => [12, 15, 16]; 	
 # - [2, 3, 5, 6] => [12, 15]
 
-# Задайте список из n случайных чисел
-# from random import random
+spisok = [2, 3, 4, 5, 6]    
 
 
-def get_list(n):
-    list_random = []
-    for i in range(1, n + 1):
-        list_random.append(random.randint(0, 9))
-    return list_random
+def multiplying_pairs(spisok): 
+    new_spisok = []			# - создаем new_spisok
+    for i in range(0, len(spisok) // 2):  # - находим длину и проходим половину списка
+        new_spisok.append(spisok[i] * spisok[-i-1])  # перемножаем элементы сначала и с конца списка и добавляем в new_spisok:  
+    if len(spisok) % 2 == 1:    #  если количество элементов списка нечетное
+        new_spisok.append(spisok[(len(spisok) // 2)] ** 2)  # возводим в квадрат средний элемент и добавляем список
+    return new_spisok
 
 
-# нахождение произведений пар чисел списка
-def pair_miltipiy(list_random):
-    list_miltipiy = []
-    for i in range(0, len(list_random) // 2):   # - находим длину списка и проходим половину списка 
-        # перемножаем элементы сначала и с конца списка и добавляем в новый список:
-        list_miltipiy.append(list_random[i] * list_random[-i-1])
-    
-    #  если количество элментов списка нечетное, то добавляем средний элемент списка возведенный в квадрат
-    if len(list_random) % 2:
-        # if len(list_random) % 2 == 1   # другой вриант проверки на нечетность
-        list_miltipiy.append(list_random[(len(list_random) // 2)] ** 2)
-    return list_miltipiy
-
-
-
-
-
-# # Марат начал задаччу, но потом перебили
-# list1 = [2, 3, 5, 6]
-# for i in range(len(list1)/2):     # - находим длину списка и проходим половину списка     
-
-
-# a = 5
-# b = 3
-# c = a + b
-# print(c)
-
+print(f'Изначальный список {spisok}')
+print(f'Произведение пар чисел списка {multiplying_pairs(spisok)}')
