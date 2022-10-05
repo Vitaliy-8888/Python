@@ -6,7 +6,7 @@
 
 spisok = [2, 3, 5, 9, 3]
 
-def summa_spisok(spisok):
+def sum_odd_positions(spisok):
     summa = 0
     for i in range(len(spisok)):    # - проходим по всей длине списка
         if i % 2 != 0:              # - находим нечётные позиции (i) в списке
@@ -14,4 +14,4 @@ def summa_spisok(spisok):
     return print(f'Сумма элементов списка, стоящих на нечётных позициях = {summa}')
 
 
-summa_spisok(spisok)
+sum_odd_positions(spisok)
