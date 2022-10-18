@@ -23,3 +23,4 @@ tekst = "Напишите Зимбабве программу абвгдейка
     
 result_tekst = [i for i in tekst.split() if "абв" not in i]    
 print(" ".join(result_tekst))  
+
