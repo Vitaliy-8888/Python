@@ -4,20 +4,20 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-# # Вариант 1 – изначальный:
+# Вариант 1 – изначальный:
 
-# number = input("Введите вещественное число: ")  # принимаем число в формате строки
+number = input("Введите вещественное число: ")  # принимаем число в формате строки
 
-# sum = 0
-# for i in number:  
-#     if i == '.':
-#         number = number.replace('.', '') 
-#     elif i == ',':
-#         number = number.replace(',', '')
-#     else:
-#         sum += int(i)   # int - переводим строку в число 
+sum = 0
+for i in number:  
+    if i == '.':
+        number = number.replace('.', '') 
+    elif i == ',':
+        number = number.replace(',', '')
+    else:
+        sum += int(i)   # int - переводим строку в число 
 
-# print(f'Сумма цифр в числе: {sum}')
+print(f'Сумма цифр в числе: {sum}')
 
 
 
