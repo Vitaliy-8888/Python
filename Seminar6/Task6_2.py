@@ -29,3 +29,4 @@ number = input("Введите вещественное число: ")  # при
 result = list(filter(lambda i: i != '.' and i != ',', str(number)))  
 print(f'Сумма цифр в числе: {sum(list(map(int, result)))}')        
 
+
