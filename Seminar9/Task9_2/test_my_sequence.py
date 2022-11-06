@@ -1,3 +1,5 @@
+# Задача ДЗ 9_2. Написать тесты к функциям из ранее выполненных заданий.
+
 import pytest
 from my_sequence import num_sequence
 
