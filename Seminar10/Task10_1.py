@@ -48,14 +48,14 @@ def timer(func):
 
 
 def cacher(func):
-    cache = {}                  # сохраняем занчения в словарь (cach)
+    cache = {}                  # сохраняем занчения в словарь 
 
 
     def wrapper(*args):
         key = args
-        if key not in cache:              # если ключа (который пришел) нет словаре (cach)
+        if key not in cache:              # если ключа нет словаре 
             cache[key] = func(*args)       # тогда выполняется функция
-        return cache[key]               # если ключа (который пришел) уже есть в словаре, то берем его из словаря
+        return cache[key]               # если ключа уже есть в словаре, то берем его из словаря
 
     return wrapper
 
