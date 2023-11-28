@@ -22,3 +22,4 @@ n = int(input("Введите натуральное число n: "))
 result = list(map(lambda i: (3 * i + 1), range(1, n + 1)))
 print(result)
 
+
